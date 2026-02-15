@@ -178,8 +178,9 @@ Mehrere Claude-Code-Tabs können gleichzeitig am Vault arbeiten. Koordination l�
 ### Beim Beenden
 
 1. Alle Änderungen im Worktree committen
-2. Im Hauptverzeichnis:
+2. Im Hauptverzeichnis — ausstehende Obsidian-Änderungen zuerst committen:
    ```bash
+   git add -A && git commit -m "Obsidian-Änderungen vor Merge"
    git pull --rebase
    git merge tab-XXXX/aufgabenname
    ```
@@ -205,6 +206,10 @@ Mehrere Claude-Code-Tabs können gleichzeitig am Vault arbeiten. Koordination l�
 - Widersprüchliche Änderungen an CLAUDE.md oder Steckbrief
 
 Bei echtem Konflikt: beide Versionen zeigen, [Nutzername]s Entscheidung abwarten.
+
+### Kein `git stash` verwenden
+
+Obsidian schreibt ständig in Vault-Dateien (Timestamps, Log). Zwischen `stash` und `stash pop` können sich Dateien ändern, was zu Konflikten und Datenverlust führt. Stattdessen: ausstehende Änderungen committen (siehe Schritt 2 oben).
 
 ### Wichtig
 
