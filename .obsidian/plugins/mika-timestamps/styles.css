@@ -1,0 +1,5 @@
+/* Mika Timestamps — HTML-Kommentare visuell kleiner und dezenter */
+.cm-comment {
+    font-size: 0.7em;
+    opacity: 0.5;
+}

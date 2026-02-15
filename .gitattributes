@@ -1,0 +1,3 @@
+# Merge-Strategien für Hot Files
+# union = bei Konflikten beide Versionen behalten (alle Zeilen)
+Input Dump.md merge=union

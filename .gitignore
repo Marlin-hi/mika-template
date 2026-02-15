@@ -1,0 +1,21 @@
+# Obsidian — session-spezifisch (ändert sich ständig, kein Wert in History)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian — Cache (wird lokal neu generiert)
+.obsidian/graph.json
+.obsidian/backlink.json
+.obsidian/cache
+
+# System-Dateien
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Claude Code
+.claude/
+*.tmp
+*.tmp.*
+
+# Worktrees (Parallelarbeit)
+mika-tabs/

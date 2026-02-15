@@ -1,0 +1,9 @@
+{
+  "id": "mika-timestamps",
+  "name": "Mika Timestamps",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Granulare Zeitstempel als HTML-Kommentare — Spuren beim Öffnen und Schreiben, zentrales Aktivitätslog.",
+  "author": "Marlin & Mika",
+  "isDesktopOnly": false
+}
