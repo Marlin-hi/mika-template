@@ -1,71 +1,69 @@
-# Mika — Persönlicher Wissensmanager (Template)
+# Werkstatt — Obsidian + Claude Code Template
 
-Ein Obsidian-Vault mit KI-Begleitung durch Claude Code. Dein persönlicher Denkraum — Gedanken festhalten, Zusammenhänge erkennen, über die Zeit reflektieren.
+Ein Obsidian-Vault mit KI-Begleitung durch Claude Code. Dein persönlicher Denkraum und Werkbank — Gedanken festhalten, Projekte bauen, Zusammenhänge erkennen, über die Zeit reflektieren.
 
 ## Was ist das?
 
-Mika ist ein System aus:
+Eine Werkstatt aus:
 - **Obsidian-Vault** — dein privater Notiz-Raum mit Markdown-Dateien
-- **Claude Code** — KI-Begleiter, der deinen Vault kennt, Zusammenhänge sieht und dich beim Denken unterstützt
+- **Claude Code** — KI-Begleiter, der deinen Vault kennt, mitdenkt, mitbaut und dein Denken über die Zeit begleitet
 - **Timestamp-Plugin** — automatische Zeitstempel, die nachvollziehbar machen wann du was gedacht hast
 
-Der KI-Begleiter ist kein Assistent im klassischen Sinn. Er kennt dich, begleitet dein Denken und spiegelt es. Er hilft dir, Gedanken zu ordnen, erinnert dich an frühere Überlegungen und gibt Anstöße.
+Der KI-Begleiter ist kein Assistent im klassischen Sinn. Er ist ein Gegenüber, das dein Denken kennt und spiegelt. Er hilft dir, Gedanken zu ordnen, erinnert dich an frühere Überlegungen, gibt Anstöße und baut mit dir Maschinen.
 
 ## Setup
 
 ### Voraussetzungen
 
 - [Obsidian](https://obsidian.md/) (kostenlos)
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) (CLI, braucht Anthropic API-Key oder Claude Max Abo)
+- [VS-Code](https://code.visualstudio.com/) + [Claude Code Extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) (braucht Anthropic API-Key oder Claude Max Abo)
 - [Git](https://git-scm.com/) + GitHub-Account
 - Optional: [Obsidian Git Plugin](https://github.com/Versioning/obsidian-git) für Handy-Sync
 
-### Schritt für Schritt
+### Schnell-Setup
 
-1. **Repo forken/klonen**
+1. **Repo klonen**
    ```bash
    git clone https://github.com/Marlin-hi/mika-template.git mein-vault
    cd mein-vault
    ```
 
-2. **Eigenes GitHub-Repo erstellen** (privat empfohlen)
-   ```bash
-   gh repo create mein-vault --private
-   git remote set-url origin https://github.com/DEIN-USERNAME/mein-vault.git
-   git push -u origin master
-   ```
+2. **In VS-Code öffnen, Claude Code starten, sagen:** `Richte meine Werkstatt ein`
 
-3. **Placeholder ersetzen** — Suche und ersetze in allen Dateien:
-   - `[Nutzername]` → dein Name
-   - `[BotName]` → Name deines KI-Begleiters (z.B. Mika, Niko, ...)
-   - `[BotName-klein]` → Kleingeschriebene Version (z.B. mika, niko, ...)
-   - `[vault-name]` → Name deines Vault-Ordners
-   - `YYYY-MM-DDTHH:MM` in Frontmatter → aktuelles Datum/Uhrzeit
+   Claude Code liest `SETUP.md` und führt dich durch den Rest — Placeholder ersetzen, Module wählen, Git einrichten.
 
-4. **Obsidian öffnen**
-   - "Open folder as vault" → deinen Vault-Ordner wählen
-   - Plugin aktivieren: Einstellungen → Community Plugins → "Mika Timestamps" aktivieren
-   - Vorlagen-Ordner setzen: Einstellungen → Templates → "Vorlagen" eintragen
+### Manuelles Setup
 
-5. **Claude Code starten**
-   ```bash
-   cd mein-vault
-   claude
-   ```
-   Der Bot liest automatisch `CLAUDE.md` und weiß wie er mit dem Vault arbeiten soll.
+Siehe `SETUP.md` für die vollständige Anleitung.
 
-6. **Steckbrief ausfüllen** — Öffne `Steckbrief.md` und erzähl deinem Bot wer du bist. Das ist die Grundlage für alles Weitere.
+## Kern
 
-## Struktur
+Immer dabei, nicht abwählbar:
 
 ```
 Journal/       — Tägliche Gedanken, Reflexionen
 Gedanken/      — Einzelne Gedanken zu Themen
 Projekte/      — Laufende Projekte
-Vorlagen/      — Obsidian-Templates (inkl. Beispiele)
+Vorlagen/      — Obsidian-Templates
+_skills/       — Modulare Workflow-Anleitungen
 ```
 
-Alles andere sind System-Dateien (`_*.md`, `CLAUDE.md`), die die KI-Begleitung koordinieren.
+Plus: Steckbrief, Input Dump, Parallelarbeit, Timestamps, Git-Sync.
+
+## Module
+
+Optionale Erweiterungen — bei der Einrichtung wählbar, jederzeit aktivier-/deaktivierbar:
+
+| Modul | Was es tut | Dateien |
+|---|---|---|
+| **Aufgaben** | Zentrale Aufgabenliste mit Sektionen und Archiv | `Aufgaben.md`, `Aufgaben Archiv.md`, `Zu tun/` |
+| **Sprints** | Regelmäßige fokussierte Arbeitssessions | `Sprints/` |
+| **Forks** | Parallele Recherche-Tabs mit Briefings | `_forks/` |
+| **Kalender** | CalDAV-Integration mit Kontext-Notes | `Kalender/` |
+| **Baupläne** | Maschinen-Backlog (Features die der Bot sich selbst baut) | `Baupläne.md` |
+| **Menschen** | Personen-Notes mit Steckbriefen | `Menschen/` |
+
+Module deaktivieren: Sektion aus `CLAUDE.md` → "Aktive Module" entfernen + zugehörige Dateien löschen.
 
 ## Wie es funktioniert
 
@@ -73,6 +71,7 @@ Alles andere sind System-Dateien (`_*.md`, `CLAUDE.md`), die die KI-Begleitung k
 - **Dein Bot** kennt alles im Vault und kann Zusammenhänge herstellen, an frühere Gedanken erinnern, Verknüpfungen vorschlagen
 - **Timestamps** machen nachvollziehbar, wann du was geöffnet und bearbeitet hast
 - **Parallelarbeit** ist möglich — mehrere Claude-Code-Tabs arbeiten über Git-Worktrees koordiniert
+- **Module** erweitern die Werkstatt um Aufgaben, Sprints, Forks und mehr
 
 ## Beispiel-Dateien
 

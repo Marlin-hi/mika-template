@@ -1,6 +1,6 @@
 # [BotName] einrichten — Anleitung für Claude Code
 
-Du richtest gerade einen persönlichen Wissensmanager namens **[BotName]** ein. [BotName] ist ein Obsidian-Vault mit KI-Begleitung — er hilft [Nutzername], seine Gedanken zu ordnen, Zusammenhänge zu erkennen und über die Zeit zu reflektieren.
+Du richtest gerade eine persönliche Werkstatt namens **[BotName]** ein. [BotName] ist ein Obsidian-Vault mit KI-Begleitung — er hilft [Nutzername], Gedanken zu ordnen, Projekte zu bauen, Zusammenhänge zu erkennen und über die Zeit zu reflektieren.
 
 Arbeite die Schritte der Reihe nach ab. Manche Schritte kannst du automatisch erledigen, bei anderen muss [Nutzername] selbst etwas tun — das ist jeweils markiert.
 
@@ -33,9 +33,29 @@ Ersetze in **allen Dateien** (außer `.obsidian/plugins/mika-timestamps/main.js`
 Zusätzlich in allen Frontmatter-Blöcken (zwischen `---`):
 - `YYYY-MM-DDTHH:MM` → aktuelles Datum und Uhrzeit (z.B. `2026-02-15T19:00`)
 
-Die `.gitignore` und `.gitattributes` haben keine Placeholder.
+Die `.gitignore`, `.gitattributes` und `README.md` haben keine Placeholder.
 
-## Schritt 4: Willkommens-Note erstellen
+## Schritt 4: Module wählen
+
+Frag [Nutzername] welche Module er aktivieren möchte. Erkläre kurz was jedes Modul tut:
+
+| Modul | Beschreibung | Bei Deaktivierung entfernen |
+|---|---|---|
+| **Aufgaben** | Zentrale Aufgabenliste mit Sektionen, Archiv und Zeiterfassung | `Aufgaben.md`, `Aufgaben Archiv.md`, `Zu tun/`, `_skills/aufgaben.md`, Sektion "Aufgaben" in CLAUDE.md |
+| **Sprints** | Regelmäßige fokussierte Arbeitssessions | `Sprints/`, `_skills/sprint.md`, Sektion "Sprints" in CLAUDE.md |
+| **Forks** | Parallele Recherche-Tabs mit Briefings | `_forks/`, `_skills/fork.md`, Sektion "Forks" in CLAUDE.md |
+| **Kalender** | CalDAV-Integration mit Kontext-Notes zu Terminen | `Kalender/`, `_skills/kalender.md`, Sektion "Kalender" in CLAUDE.md |
+| **Baupläne** | Maschinen-Backlog — Features die der Bot sich selbst baut | `Baupläne.md`, `_skills/bauplaene.md`, Sektion "Baupläne" in CLAUDE.md |
+| **Menschen** | Personen-Notes mit Steckbriefen und Gesprächsnotizen | `Menschen/`, `_skills/menschen.md`, Sektion "Menschen" in CLAUDE.md |
+
+Für jedes **nicht** gewollte Modul:
+1. Die zugehörige Sektion unter "Aktive Module" in `CLAUDE.md` entfernen
+2. Die zugehörigen Dateien und Ordner löschen (siehe Tabelle oben)
+3. Den Eintrag aus `_onboarding.md` → Vault-Struktur entfernen
+
+**Hinweis**: Sprints benötigt das Aufgaben-Modul (oder zumindest eine andere Quelle für Sprint-Items). Wenn Aufgaben deaktiviert wird, sollte `_skills/sprint.md` angepasst werden.
+
+## Schritt 5: Willkommens-Note erstellen
 
 Erstelle die Datei `Gedanken/Was ist [BotName].md` mit folgendem Inhalt:
 
@@ -48,7 +68,7 @@ tags: [[BotName-klein], meta]
 
 # Was ist [BotName]
 
-[BotName] ist dein persönlicher Wissensmanager. Hier steht, was das ist und was du damit machen kannst.
+[BotName] ist deine persönliche Werkstatt. Hier steht, was das ist und was du damit machen kannst.
 
 ## Kurz gesagt
 
@@ -65,7 +85,7 @@ tags: [[BotName-klein], meta]
 - **Erinnern** — wenn du über ein Thema sprichst, das du vor Wochen schon mal hattest, weist [BotName] dich darauf hin
 - **Reflektieren** — [BotName] kann dir zeigen, wie sich dein Denken über die Zeit entwickelt hat
 - **Steckbrief pflegen** — [BotName] lernt dich kennen und hält fest, was er über dich weiß
-- **Vault aufräumen** — ungetaggte Notes durchgehen, Verlinkungen aufbauen, Struktur pflegen
+- **Maschinen bauen** — [BotName] baut sich selbst neue Fähigkeiten, trackt Ideen und setzt sie um
 
 ## Wie du mit [BotName] arbeitest
 
@@ -76,8 +96,7 @@ tags: [[BotName-klein], meta]
 ## Was [BotName] NICHT ist
 
 - Kein Google — frag ihn nicht nach Fakten die du nachschlagen kannst
-- Kein Aufgabenmanager — der Vault ist für Gedanken und Reflexionen, nicht für To-Do-Listen
-- Kein Chatbot für Smalltalk — [BotName] ist am besten wenn es um dein Denken geht
+- Kein Chatbot für Smalltalk — [BotName] ist am besten wenn es um dein Denken und deine Projekte geht
 
 ## Erste Schritte
 
@@ -96,13 +115,13 @@ Dein Vault ist ein Git-Repository. [BotName] committed und pusht auf dein GitHub
 
 Ersetze `[AKTUELLES DATUM]` durch den aktuellen Timestamp im Format `YYYY-MM-DDTHH:MM`.
 
-## Schritt 5: Remote-Verbindung zum Template entfernen
+## Schritt 6: Remote-Verbindung zum Template entfernen
 
 ```bash
 git remote remove origin
 ```
 
-## Schritt 6: GitHub-Repo einrichten
+## Schritt 7: GitHub-Repo einrichten
 
 **⚠️ [Nutzername] muss hier mitmachen:**
 
@@ -115,7 +134,7 @@ git remote remove origin
    gh repo create [BotName-klein] --private --source=. --push
    ```
 
-## Schritt 7: Obsidian einrichten
+## Schritt 8: Obsidian einrichten
 
 **⚠️ [Nutzername] muss hier mitmachen:**
 
@@ -124,13 +143,13 @@ git remote remove origin
 3. Einstellungen → Community Plugins → "Restricted mode" deaktivieren → "Mika Timestamps" aktivieren
 4. Optional: Einstellungen → Templates → Template folder: `Vorlagen`
 
-## Schritt 8: CLAUDE.md als Projekt-Instruktion setzen
+## Schritt 9: CLAUDE.md als Projekt-Instruktion setzen
 
 Damit [BotName] in Zukunft automatisch die CLAUDE.md liest, wenn [Nutzername] Claude Code im Vault-Ordner öffnet, muss der Vault als Arbeitsverzeichnis genutzt werden. [BotName] liest dann automatisch die CLAUDE.md.
 
 Sag [Nutzername]: **"Wenn du mit [BotName] reden willst, öffne den [BotName-klein]-Ordner in VS-Code und starte Claude Code dort."**
 
-## Schritt 9: Erster Start
+## Schritt 10: Erster Start
 
 Sag [Nutzername] er soll jetzt `Steckbrief.md` öffnen und anfangen sich vorzustellen. Das ist der beste Einstieg — danach kennt [BotName] ihn und kann richtig loslegen.
 
@@ -140,7 +159,7 @@ Sag [Nutzername] er soll jetzt `Steckbrief.md` öffnen und anfangen sich vorzust
 
 Wenn alles eingerichtet ist, sag [Nutzername]:
 
-> Du hast jetzt [BotName] — deinen persönlichen Wissensmanager. Er besteht aus einem Obsidian-Vault (dein Notizbuch) und einer KI ([BotName]), die den Vault kennt und dir beim Denken hilft.
+> Du hast jetzt [BotName] — deine persönliche Werkstatt. Sie besteht aus einem Obsidian-Vault (dein Notizbuch und Werkbank) und einer KI ([BotName]), die den Vault kennt und dir beim Denken und Bauen hilft.
 >
 > **So nutzt du [BotName]:**
 > - In Obsidian schreibst du Gedanken, Journal-Einträge, Projektnotizen
