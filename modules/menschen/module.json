@@ -1,0 +1,14 @@
+{
+  "name": "menschen",
+  "description": "Personen-Notes mit Steckbriefen und Gesprächsnotizen",
+  "category": "content",
+  "requires": [],
+  "files": {
+    "_skills/menschen.md": "files/_skills/menschen.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["Menschen"],
+  "platform": "all"
+}

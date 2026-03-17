@@ -1,0 +1,15 @@
+{
+  "name": "flags",
+  "description": "Mängel im Vorbeigehen festhalten ohne Workflow-Unterbrechung",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/flag.md": "files/_skills/flag.md",
+    "_flags.md": "files/_flags.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

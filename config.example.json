@@ -1,0 +1,23 @@
+{
+  "bot_name": "Atlas",
+  "bot_name_lower": "atlas",
+  "user_name": "Robert",
+  "vault_name": "atlas-robert",
+  "modules": [
+    "aufgaben",
+    "kalender",
+    "sprints",
+    "bauplaene",
+    "menschen",
+    "flags",
+    "parallelarbeit",
+    "forks",
+    "subagents",
+    "durcharbeiten",
+    "screenshots",
+    "token-tracking",
+    "session-reopen",
+    "onboarding-hook",
+    "tab-title"
+  ]
+}

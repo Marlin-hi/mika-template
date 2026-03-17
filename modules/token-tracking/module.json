@@ -1,0 +1,14 @@
+{
+  "name": "token-tracking",
+  "description": "Token-Verbrauch über Sessions hinweg tracken",
+  "category": "hooks",
+  "requires": [],
+  "files": {},
+  "hooks": {
+    "Stop": ["hooks/token-log.js"]
+  },
+  "permissions": [],
+  "gitignore": ["_scripts/token-log.json"],
+  "folders": ["_scripts"],
+  "platform": "all"
+}

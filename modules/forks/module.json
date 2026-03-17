@@ -1,0 +1,14 @@
+{
+  "name": "forks",
+  "description": "Themen in eigene Tabs abzweigen mit Briefing-Dateien",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/fork.md": "files/_skills/fork.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["_forks"],
+  "platform": "all"
+}

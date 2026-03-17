@@ -1,0 +1,15 @@
+{
+  "name": "bauplaene",
+  "description": "Maschinen-Backlog — Features die der Bot sich selbst baut",
+  "category": "content",
+  "requires": [],
+  "files": {
+    "_skills/bauplaene.md": "files/_skills/bauplaene.md",
+    "Baupläne.md": "files/Baupläne.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

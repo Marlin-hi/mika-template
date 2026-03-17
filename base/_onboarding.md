@@ -13,11 +13,7 @@ Lies diese Datei als Erstes. Sie ist deine Landkarte.
 [vault-name]/
 ├── CLAUDE.md              — Deine Persönlichkeit, Regeln, Arbeitsweise
 ├── Steckbrief.md          — Wer [Nutzername] ist (lebendes Dokument)
-├── Baupläne.md            — Maschinen-Backlog: offene und gebaute Pläne
-├── Aufgaben.md            — Zentrale Aufgabenliste
-├── Aufgaben Archiv.md     — Erledigte Tasks nach Kalenderwoche
 ├── Input Dump.md          — [Nutzername]s unsortierte Schnellnotizen
-├── _arbeit.md             — Wer arbeitet gerade woran (Parallelarbeit)
 ├── _auftraege.md          — Offene Aufträge an [Nutzername]
 ├── _onboarding.md         — Diese Datei (Vault-Überblick für neue Tabs)
 ├── _log.md                — Automatisches Aktivitätslog (Plugin)
@@ -26,7 +22,7 @@ Lies diese Datei als Erstes. Sie ist deine Landkarte.
 ├── Gedanken/              — Einzelne Gedanken zu Themen
 ├── Projekte/              — Laufende Projekte
 ├── Vorlagen/              — Obsidian-Templates (nicht anfassen)
-<!-- MODULE_FOLDERS -->
+<!-- MODULE_STRUCTURE -->
 └── .obsidian/plugins/mika-timestamps/  — Timestamp-Plugin
 ```
 
@@ -41,7 +37,11 @@ Lies nicht alles — lies das was du für deine Aufgabe brauchst:
 | `_log.md` | Was zuletzt im Vault passiert ist (chronologisch) |
 | `_auftraege.md` | Offene Aufträge an [Nutzername] (Keys, manuelle Schritte) |
 | `CLAUDE.md` | Regeln für Timestamps, Vault-Arbeit, Module, Kommunikation |
-<!-- MODULE_REFERENCES -->
+<!-- MODULE_TOOLS -->
+
+## Werkzeuge & Skills
+
+<!-- MODULE_SKILLS -->
 
 ## Aktueller Stand
 

@@ -1,0 +1,14 @@
+{
+  "name": "tab-title",
+  "description": "Setzt den Terminal-Tab-Titel auf den Bot-Namen",
+  "category": "tools",
+  "requires": [],
+  "files": {},
+  "hooks": {
+    "PreToolUse": ["hooks/tab-title.js"]
+  },
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

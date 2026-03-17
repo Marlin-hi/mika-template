@@ -1,0 +1,14 @@
+{
+  "name": "kalender",
+  "description": "CalDAV-Integration mit Kontext-Notes zu Terminen",
+  "category": "tools",
+  "requires": [],
+  "files": {
+    "_skills/kalender.md": "files/_skills/kalender.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["Kalender"],
+  "platform": "all"
+}

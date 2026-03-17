@@ -1,0 +1,14 @@
+{
+  "name": "sprints",
+  "description": "Regelmäßige fokussierte Arbeitssessions mit Sprint-Dateien",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/sprint.md": "files/_skills/sprint.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["Sprints"],
+  "platform": "all"
+}

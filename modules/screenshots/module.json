@@ -1,0 +1,14 @@
+{
+  "name": "screenshots",
+  "description": "Screenshot-Tool für visuelles Feedback",
+  "category": "tools",
+  "requires": [],
+  "files": {
+    "_scripts/screenshot.sh": "files/_scripts/screenshot.sh"
+  },
+  "hooks": {},
+  "permissions": ["Bash(screencapture *)"],
+  "gitignore": ["_scripts/output.png"],
+  "folders": ["_scripts"],
+  "platform": "macos"
+}

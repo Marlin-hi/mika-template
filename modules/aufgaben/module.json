@@ -1,0 +1,16 @@
+{
+  "name": "aufgaben",
+  "description": "Zentrale Aufgabenliste mit Sektionen, Archiv und Zeiterfassung",
+  "category": "content",
+  "requires": [],
+  "files": {
+    "_skills/aufgaben.md": "files/_skills/aufgaben.md",
+    "Aufgaben.md": "files/Aufgaben.md",
+    "Aufgaben Archiv.md": "files/Aufgaben Archiv.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["Zu tun"],
+  "platform": "all"
+}

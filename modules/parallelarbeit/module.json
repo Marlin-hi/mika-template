@@ -1,0 +1,15 @@
+{
+  "name": "parallelarbeit",
+  "description": "Mehrere Claude-Code-Tabs gleichzeitig am Vault koordinieren",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/parallelarbeit.md": "files/_skills/parallelarbeit.md",
+    "_arbeit.md": "files/_arbeit.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": ["*-tabs/"],
+  "folders": [],
+  "platform": "all"
+}

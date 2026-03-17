@@ -1,0 +1,14 @@
+{
+  "name": "durcharbeiten",
+  "description": "Autonomer Arbeitsmodus — weiterbauen ohne Rückfragen",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/durcharbeiten.md": "files/_skills/durcharbeiten.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

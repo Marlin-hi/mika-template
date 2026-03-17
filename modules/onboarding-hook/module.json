@@ -1,0 +1,14 @@
+{
+  "name": "onboarding-hook",
+  "description": "Erinnert am Session-Ende, _onboarding.md zu aktualisieren",
+  "category": "hooks",
+  "requires": [],
+  "files": {},
+  "hooks": {
+    "Stop": ["hooks/onboarding-reminder.js"]
+  },
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

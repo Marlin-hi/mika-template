@@ -1,0 +1,14 @@
+{
+  "name": "subagents",
+  "description": "Subagents eigenständig starten für parallele Teilaufgaben",
+  "category": "workflow",
+  "requires": [],
+  "files": {
+    "_skills/subagent.md": "files/_skills/subagent.md"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": [],
+  "platform": "all"
+}

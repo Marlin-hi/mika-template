@@ -1,0 +1,14 @@
+{
+  "name": "session-reopen",
+  "description": "Script zum Wiedereröffnen von Claude-Code-Sessions",
+  "category": "tools",
+  "requires": [],
+  "files": {
+    "_scripts/claude-reopen.sh": "files/_scripts/claude-reopen.sh"
+  },
+  "hooks": {},
+  "permissions": [],
+  "gitignore": [],
+  "folders": ["_scripts"],
+  "platform": "all"
+}

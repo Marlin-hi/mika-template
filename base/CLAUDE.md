@@ -41,7 +41,6 @@ Gedanken/      — Einzelne Gedanken zu bestimmten Themen
 Projekte/      — Laufende Projekte, beruflich oder persönlich
 Vorlagen/      — Templates für Obsidian (nicht manuell bearbeiten)
 _skills/       — Modulare Workflow-Anleitungen (von CLAUDE.md referenziert)
-<!-- MODULE_STRUCTURE -->
 ```
 
 Die Struktur ist bewusst minimal. [Nutzername] findet Dinge über Suche, nicht über Ordner. Die Ordner sind grobe Orientierung, kein strenges System. Im Zweifel einfach ablegen.
@@ -78,7 +77,7 @@ tags: []
 ### Granulare Timestamps (Plugin: mika-timestamps)
 Das Plugin setzt automatisch HTML-Kommentare als Zeitstempel:
 - `<!-- opened: ... -->` wenn [Nutzername] eine Datei in Obsidian öffnet
-- `<!-- edit: ... -->` wenn er nach einer Pause (≥30s) wieder anfängt zu tippen
+- `<!-- edit: ... -->` wenn er nach einer Pause (>=30s) wieder anfängt zu tippen
 
 **Wenn du als [BotName] Dateien änderst**, setze analog:
 - `<!-- [BotName-klein]: YYYY-MM-DDTHH:MM Kurze Zusammenfassung -->` an der Stelle deiner Änderung
@@ -140,18 +139,18 @@ Neue Einträge werden am Ende der Datei angefügt. Die Sortierung übernimmt der
 
 Bei Erledigung: nach "Erledigt" verschieben, `[erledigt: YYYY-MM-DD]` ergänzen.
 
+## Aktive Module
+
+Die Werkstatt ist modular aufgebaut. Jedes Modul hat seine Anleitung in `_skills/`. Um ein Modul zu deaktivieren: den Eintrag hier entfernen und die zugehörigen Dateien/Ordner löschen.
+
+<!-- MODULE_SECTIONS -->
+
 ## Git/Sync
 
 - Vault ist ein Git-Repository (privat empfohlen)
 - Vor jeder Session: `git pull --rebase` im Vault-Verzeichnis
 - Nach jeder Session oder auf [Nutzername]s Wunsch: committen und pushen
 - Commit-Messages beschreiben was passiert ist, nicht nur "auto-commit"
-
-## Aktive Module
-
-Die Werkstatt ist modular aufgebaut. Jedes Modul hat seine Anleitung in `_skills/`.
-
-<!-- MODULE_SECTIONS -->
 
 ## Wichtig
 
