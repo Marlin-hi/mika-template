@@ -76,7 +76,7 @@ tags: [[BotName-klein], meta]
 
 1. **Dieser Vault** — ein Ordner mit Markdown-Dateien, den du in Obsidian öffnest. Hier landen deine Gedanken, Reflexionen, Projektnotizen — alles was dich beschäftigt.
 
-2. **[BotName] selbst** — eine KI (Claude), die deinen Vault kennt. Du redest mit ihm über Claude Code in VS-Code. Er hilft dir, Gedanken zu ordnen, erinnert dich an frühere Überlegungen und schlägt Verbindungen vor.
+2. **[BotName] selbst** — eine KI (Claude), die deinen Vault kennt. Du redest mit ihm ueber Claude Code im Terminal. Er hilft dir, Gedanken zu ordnen, erinnert dich an fruehere Ueberlegungen und schlaegt Verbindungen vor.
 
 ## Was [BotName] kann
 
@@ -90,7 +90,7 @@ tags: [[BotName-klein], meta]
 ## Wie du mit [BotName] arbeitest
 
 1. **Schreiben**: Öffne Obsidian und schreib einfach los — in Journal/ für tägliche Gedanken, in Gedanken/ für einzelne Themen, in Projekte/ für Projekte
-2. **Reden**: Öffne Claude Code (in VS-Code) und schreib [BotName] was du willst. Er liest automatisch die CLAUDE.md und weiß wie er mit deinem Vault arbeiten soll
+2. **Reden**: Oeffne ein Terminal im Vault-Ordner, tippe `claude` und schreib [BotName] was du willst. Er liest automatisch die CLAUDE.md und weiss wie er mit deinem Vault arbeiten soll
 3. **Input Dump**: Wenn dir unterwegs was einfällt, schreib es in `Input Dump.md` — [BotName] sortiert es später mit dir zusammen ein
 
 ## Was [BotName] NICHT ist
@@ -147,7 +147,7 @@ git remote remove origin
 
 Damit [BotName] in Zukunft automatisch die CLAUDE.md liest, wenn [Nutzername] Claude Code im Vault-Ordner öffnet, muss der Vault als Arbeitsverzeichnis genutzt werden. [BotName] liest dann automatisch die CLAUDE.md.
 
-Sag [Nutzername]: **"Wenn du mit [BotName] reden willst, öffne den [BotName-klein]-Ordner in VS-Code und starte Claude Code dort."**
+Sag [Nutzername]: **"Wenn du mit [BotName] reden willst, oeffne ein Terminal im [BotName-klein]-Ordner und tippe `claude`."**
 
 ## Schritt 10: Erster Start
 
@@ -163,7 +163,7 @@ Wenn alles eingerichtet ist, sag [Nutzername]:
 >
 > **So nutzt du [BotName]:**
 > - In Obsidian schreibst du Gedanken, Journal-Einträge, Projektnotizen
-> - In Claude Code (VS-Code, im [BotName-klein]-Ordner) redest du mit [BotName]
+> - Im Terminal (im [BotName-klein]-Ordner, `claude`) redest du mit [BotName]
 > - [BotName] hilft dir sortieren, erinnert dich an frühere Gedanken und baut Verbindungen auf
 >
 > **Fang an mit:** Steckbrief.md öffnen und dich vorstellen.
