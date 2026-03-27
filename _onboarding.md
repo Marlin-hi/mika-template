@@ -11,49 +11,37 @@ Lies diese Datei als Erstes. Sie ist deine Landkarte.
 
 ```
 [vault-name]/
-├── CLAUDE.md              — Deine Persönlichkeit, Regeln, Arbeitsweise
+├── CLAUDE.md              — Deine Persoenlichkeit, Regeln, Arbeitsweise
 ├── Steckbrief.md          — Wer [Nutzername] ist (lebendes Dokument)
-├── Baupläne.md            — Maschinen-Backlog: offene und gebaute Pläne
-├── Aufgaben.md            — Zentrale Aufgabenliste
-├── Aufgaben Archiv.md     — Erledigte Tasks nach Kalenderwoche
 ├── Input Dump.md          — [Nutzername]s unsortierte Schnellnotizen
-├── _arbeit.md             — Wer arbeitet gerade woran (Parallelarbeit)
-├── _auftraege.md          — Offene Aufträge an [Nutzername]
-├── _onboarding.md         — Diese Datei (Vault-Überblick für neue Tabs)
-├── _log.md                — Automatisches Aktivitätslog (Plugin)
+├── _auftraege.md          — Offene Auftraege an [Nutzername]
+├── _onboarding.md         — Diese Datei (Vault-Ueberblick)
 ├── _skills/               — Modulare Workflow-Anleitungen
-├── Journal/               — Tägliche Gedanken und Reflexionen
+├── Journal/               — Taegliche Gedanken und Reflexionen
 ├── Gedanken/              — Einzelne Gedanken zu Themen
 ├── Projekte/              — Laufende Projekte
 ├── Vorlagen/              — Obsidian-Templates (nicht anfassen)
 <!-- MODULE_FOLDERS -->
-└── .obsidian/plugins/mika-timestamps/  — Timestamp-Plugin
+└── .obsidian/             — Obsidian-Konfiguration
 ```
 
 ## Erste Anlaufstellen
-
-Lies nicht alles — lies das was du für deine Aufgabe brauchst:
 
 | Datei | Liefert dir |
 |---|---|
 | `Steckbrief.md` | Wer [Nutzername] ist, wie er denkt, was ihm wichtig ist |
 | `Input Dump.md` | Unsortierte Gedanken, die einsortiert werden wollen |
-| `_log.md` | Was zuletzt im Vault passiert ist (chronologisch) |
-| `_auftraege.md` | Offene Aufträge an [Nutzername] (Keys, manuelle Schritte) |
-| `CLAUDE.md` | Regeln für Timestamps, Vault-Arbeit, Module, Kommunikation |
+| `_auftraege.md` | Offene Auftraege an [Nutzername] |
+| `CLAUDE.md` | Regeln fuer Vault-Arbeit, Module, Kommunikation |
 <!-- MODULE_REFERENCES -->
 
 ## Aktueller Stand
 
-<!-- Hier nach jeder Session aktualisieren: Was wurde gemacht? Was steht als nächstes an? -->
+<!-- Hier nach jeder Session aktualisieren: Was wurde gemacht? Was steht als naechstes an? -->
 
 **Zuletzt erledigt:**
-- Werkstatt eingerichtet
+- Vault initial aufgesetzt
 
-**Nächste Prioritäten:**
-- Steckbrief ausfüllen
-- Erste Gedanken und Journal-Einträge schreiben
-
-## Offene Fragen
-
-(Keine offenen Fragen gerade)
+**Naechste Schritte:**
+- Steckbrief gemeinsam ausfuellen
+- Erste Aufgaben/Projekte anlegen
